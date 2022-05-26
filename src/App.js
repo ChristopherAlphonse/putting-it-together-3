@@ -1,4 +1,5 @@
 import PersonCard from "./components/PersonCard";
+import "./style.css";
 
 const names = [
   {
@@ -17,7 +18,7 @@ const names = [
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       {names.map((name, index) => (
         <PersonCard
           key={index}
